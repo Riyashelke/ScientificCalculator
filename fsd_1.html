@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="fsd_1.css">
+    <style>
+        .matrix-input {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <!-- Existing buttons -->
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendToDisplay('%')">%</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="sqrt()">√</button>
+            <button onclick="power()">^</button>
+            <button onclick="sin()">sin</button>
+            <button onclick="cos()">cos</button>
+            <button onclick="tan()">tan</button>
+            <button onclick="log()">log</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button onclick="showMatrixOptions()">Matrix</button>
+            <button onclick="calculate()">=</button>
+        </div>
+        <div class="matrix-input" id="matrix-input">
+            <h3>Matrix Operations</h3>
+            <div class="matrix-entry">
+                <label for="matrix-operation">Operation:</label>
+                <select id="matrix-operation">
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                    <option value="multiply">Multiply</option>
+                </select>
+            </div>
+            <div class="matrix-entry">
+                <label for="matrix1">First Matrix:</label>
+                <select id="matrix1">
+                    <option value="1,2,3;4,5,6">1,2,3;4,5,6</option>
+                    <option value="7,8,9;10,11,12">7,8,9;10,11,12</option>
+                    <option value="1,0;0,1">1,0;0,1</option>
+                </select>
+            </div>
+            <div class="matrix-entry">
+                <label for="matrix2">Second Matrix:</label>
+                <select id="matrix2">
+                    <option value="1,2,3;4,5,6">1,2,3;4,5,6</option>
+                    <option value="7,8,9;10,11,12">7,8,9;10,11,12</option>
+                    <option value="1,0;0,1">1,0;0,1</option>
+                </select>
+            </div>
+            <button onclick="performMatrixOperation()">Submit</button>
+            <button onclick="hideMatrixOptions()">Cancel</button>
+        </div>
+    </div>
+    <script src="fsd_1.js"></script>
+</body>
+</html>
+    </div>
+    <script src="fsd_1.js"></script>
+</body>
+</html>
